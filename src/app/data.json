@@ -1,29 +1,73 @@
 {
     "expereince":[
         {
-            "date":"Nov 2019-Apr 2021",
-            "company":"Styx Media",
-            "position":"Software Developer",
+            "date":"Jun 2023 - Present",
+            "company":"CoutLoot",
+            "position":"Full Stack Developer",
             "discription":"Styx media is Startup marketing-based company founded in 2018.",
             "details":["Design software architecture and database from scratch to meet client requirements."],
-            "techUsed":["NodeJS"]
+            "techUsed":["NodeJS","MongoDB","Python","System Architecture Design","Aws","Docker","NextJS"]
         },
         {
-            "date":"Nov 2019-Apr 2021",
-            "company":"Styx Media",
-            "position":"Software Developer",
+            "date":"Sep 2022 - Apr 2023",
+            "company":"Tradebook",
+            "position":"Chief Technology Officer",
             "discription":"Styx media is Startup marketing-based company founded in 2018.",
             "details":["Design software architecture and database from scratch to meet client requirements."],
-            "techUsed":["NodeJS"]
+            "techUsed":["Data Analytics","Flutter","MERN","Python","System Architecture Design","MongoDB","MySql","Aws","Docker"]
+        },
+        {
+            "date":"Aug 2021 - Sep 2022",
+            "company":"FutureBridge",
+            "position":"Full Stack Developer",
+            "discription":"Styx media is Startup marketing-based company founded in 2018.",
+            "details":["Design software architecture and database from scratch to meet client requirements."],
+            "techUsed":["NodeJS","MERN","MongoDB","MySql","RabbitMq","Mautic","PHP","Docker","Kubernetes"]
+        },
+        {
+            "date":"Aug 2021 - Sep 2022",
+            "company":"Styx Media",
+            "position":"Full Stack Developer",
+            "discription":"Styx media is Startup marketing-based company founded in 2018.",
+            "details":["Design software architecture and database from scratch to meet client requirements."],
+            "techUsed":["NodeJS","MERN","Aws","MySql","WordPress","PHP","ReduxJS"]
         }
     ],
     "project":[
             {
-                "name":"StyxMedia",
-                "redirectUrl":"",
+                "name":"CoutLoot Videos",
+                "redirectUrl":"https://videos.coutloot.com/",
                 "discription":"asdasd",
                 "image":"/portfolio/images/novacutisclinics.png",
-                "techUsed":["NodeJS"]
+                "techUsed":["Gatsby","Tailwind CSS"]
+            },
+            {
+                "name":"Novacutis Clinics",
+                "redirectUrl":"https://www.novacutisclinics.com/services/dermal/",
+                "discription":"asdasd",
+                "image":"/portfolio/images/coutloot.png",
+                "techUsed":["NodeJS","MongoDB"]
+            },
+            {
+                "name":"Connect The Relevent",
+                "redirectUrl":"",
+                "discription":"asdasd",
+                "image":"/portfolio/images/connecttherelevent.png",
+                "techUsed":["Flutter","NodeJS","Websocket","Redux","MongoDB"]
+            },
+            {
+                "name":"TradeBook App",
+                "redirectUrl":"https://www.onelink.to/urepmd",
+                "discription":"TradeBook Application",
+                "image":"/portfolio/images/tradebook_app.png",
+                "techUsed":["Flutter","NodeJS","Websocket","Redux","Python","Aws","MySql","Docker","Firebase"]
+            },
+            {
+                "name":"TradeBook Website",
+                "redirectUrl":"https://tradebook.in.net/",
+                "discription":"TradeBook Application",
+                "image":"/portfolio/images/tradebook_website.png",
+                "techUsed":["NodeJS","React","MySql","Docker"]
             }
 
     ]

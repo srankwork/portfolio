@@ -35,7 +35,7 @@ const ExperienceSection = () => {
             {e.date}
           </p>
           <div className='flex items-center'>
-            <h1 className='text-[20px] font-semibold text-white'>Styx media</h1>
+            <h1 className='text-[20px] font-semibold text-white'>{e.company}</h1>
             <h2 className='ml-[15px] text-[16px] font-semibold text-white'>
               {e.position}
             </h2>
@@ -52,10 +52,10 @@ const ExperienceSection = () => {
               ))}
             </ul>
           </div>
-          <div className='mt-[12px] grid grid-cols-3 gap-4'>
+          <div className='mt-[12px] flex flex-wrap gap-4'>
             {e.techUsed.map((e) => (
               <div key={e} className='bg-[#D9D9D940] w-fit'>
-                <p className=' px-[16px] py-[6px] text-[#FADCFF] font-semibold text-[14px]'>
+                <p className='px-[16px] py-[6px] text-[#FADCFF] font-semibold text-[14px]'>
                   {e}
                 </p>
               </div>
@@ -101,13 +101,7 @@ const ProjectSection = () => {
             className='h-[150px] pt-[16px]'
             alt={e.name}
           />
-
-          {/* <img
-            className='h-[150px] pt-[16px]'
-            src='/images/novacutisclinics.png' // Path relative to the public folder
-            alt={e.name}
-          /> */}
-          <div className='mt-[30px] grid grid-cols-3 gap-4'>
+          <div className='mt-[30px] flex flex-wrap gap-4'>
             {e.techUsed.map((e) => (
               <div key={e} className='bg-[#D9D9D940] w-fit'>
                 <p className=' px-[16px] py-[6px] text-[#FADCFF] font-semibold text-[14px]'>
