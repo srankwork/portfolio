@@ -1,113 +1,176 @@
-import Image from 'next/image'
+'use client';
+import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
+
+const AboutSection = () => {
+  return (
+    <div className="detail-card p-[30px] border-l-4 border-[#E5CCFF]">
+      <p className="text-[#D1B9E3] text-[14px] font-medium leading-normal">
+        An experienced software developer with over 3+ years of experience
+        creating high-quality software applications for various clients. Skilled
+        in full-stack development, software architecture, and database design,
+        with a strong focus on delivering projects on time. Passionate about
+        learning new technologies and staying up-to-date on industry trends.
+        Seeking a challenging role in a dynamic organization where I can
+        leverage my skills to contribute to the success of the company.
+        <br />
+        <br />
+        “I am confident in my ability to quickly learn and master new
+        technologies, so I am not concerned about which specific technologies I
+        will be working with. because I’m Programmer.”
+      </p>
+    </div>
+  );
+};
+const ExperienceSection = () => {
+  return (
+    <div className="overflow-y-scroll grid gap-[20px] h-[60vh] overflow-visible">
+      {[1, 2].map((e) => (
+        <div
+          key={e}
+          className="detail-card p-[30px] border-l-4 border-[#E5CCFF]"
+        >
+          <p className="text-white text-[12px] font-semibold capitalize leading-[155%]">
+            Nov 2019 - Apr 2021
+          </p>
+          <div className="flex items-center">
+            <h1 className="text-[20px] font-semibold text-white">Styx media</h1>
+            <h2 className="ml-[15px] text-[16px] font-semibold text-white">
+              Software Developer
+            </h2>
+          </div>
+          <div className="mt-[16px] text-[#9B7CBB]">
+            <p className="text-[14px] font-medium leading-[163%]">
+              Styx media is Startup marketing-based company founded in 2018.{' '}
+            </p>
+            <ul className="list-inside">
+              <li className="list-disc">
+                Design software architecture and database from scratch to meet
+                client requirements.
+              </li>
+            </ul>
+          </div>
+          <div className="mt-[12px] grid grid-cols-3 gap-4">
+            {['NodeJS', 1, 2, 3, 4, 5, 6].map((e) => (
+              <div key={e} className="bg-[#D9D9D940] w-fit">
+                <p className=" px-[16px] py-[6px] text-[#FADCFF] font-semibold text-[14px]">
+                  {e}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+const ProjectSection = () => {
+  return (
+    <div className="overflow-y-scroll grid gap-[20px] h-[60vh] overflow-visible">
+      {[1].map((e) => (
+        <div
+          key={e}
+          className="detail-card p-[30px] border-l-4 border-[#E5CCFF] h-fit"
+        >
+          <div className="flex items-center">
+            <h1 className="text-[20px] font-semibold text-white">Styx media</h1>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              className="ml-[10px]"
+              viewBox="0 0 12 12"
+              fill="none"
+            >
+              <path d="M1 11L11 1M11 1H1M11 1V11" stroke="white" />
+            </svg>
+          </div>
+          <div className="mt-[16px] text-[#9B7CBB]">
+            <p className="text-[14px] font-medium leading-[163%]">
+              Styx media is Startup marketing-based company founded in 2018.{' '}
+            </p>
+          </div>
+          <img src="https://brittanychiang.com/_next/image?url=%2Fimages%2Fprojects%2Fcourse-card.png&w=640&q=75" />
+          <div className="mt-[30px] grid grid-cols-3 gap-4">
+            {['NodeJS', 1, 2, 3, 4, 5, 6].map((e) => (
+              <div key={e} className="bg-[#D9D9D940] w-fit">
+                <p className=" px-[16px] py-[6px] text-[#FADCFF] font-semibold text-[14px]">
+                  {e}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const navigations = [
+  { name: 'ABOUT', component: AboutSection },
+  { name: 'EXPERIENCE', component: ExperienceSection },
+  { name: 'PROJECTS', component: ProjectSection },
+];
 
 export default function Home() {
+  const [navigator, setNavigator] = useState(navigations[0]);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className="header">
+        {/* IntroDuction and contact section */}
+        <div className="flex justify-between">
+          <div className="intro">
+            <h1>Mukesh Rajpurohit</h1>
+            <p>Software Developer</p>
+          </div>
+          <div className="pr-[40px] flex ">
+            <div className="bg-[#3C156D] rounded-bl-lg rounded-br-lg mr-[20px] h-fit">
+              <div className="pt-[50px]">
+                <img
+                  className="w-[35px] h-[35px]  rounded-full"
+                  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                />
+              </div>
+            </div>
+            <div className="bg-[#3C156D] rounded-bl-lg rounded-br-lg h-fit">
+              <div className="pt-[50px]">
+                <img
+                  className="w-[35px] h-[35px]  rounded-full"
+                  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Animation line */}
+        <div className="mt-[35px] text-white"></div>
+
+        <div className="navigator flex justify-between pt-[14px] pb-[14px] pl-[40px] pr-[40px]">
+          {navigations.map((e) => (
+            <p
+              key={e.name}
+              onClick={() => {
+                setNavigator(e);
+              }}
+              className={`text-${
+                navigator.name === e.name ? '[#ECD8FF]' : '[#5C4390]'
+              } text-[14px] font-semibold leading-normal`}
+            >
+              {e.name}
+            </p>
+          ))}
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="main-details mt-[22px]">
+        {/* {navigator.component()} */}
+        {ProjectSection()}
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="flex justify-center">
+        <p className="pt-3 text-[#C7B7F8] font-poppins text-[15px] font-medium">
+          srankwork@gmail.com
+        </p>
       </div>
     </main>
-  )
+  );
 }

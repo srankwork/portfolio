@@ -2,26 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* :root {
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins';
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, #3b0069 10.09%, #07000f 99.87%);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header,
+.detail-card {
+  background: rgba(51, 0, 83, 0.75);
+  backdrop-filter: blur(12.5px);
+}
+
+/* Add white border left side of card */
+.detail-card{
+
+}
+
+.intro {
+  padding-left: 40px;
+  padding-top: 20px;
+  width: 60%;
+}
+
+.intro h1 {
+  color: #f4e9ff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.intro p {
+  padding-top: 6px;
+  color: #c7b7f8;
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
