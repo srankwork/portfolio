@@ -2,12 +2,29 @@
     "expereince":[
         {
             "date":"Nov 2019-Apr 2021",
-            "discription":"",
-            "details":[],
-            "techUsed":[]
+            "company":"Styx Media",
+            "position":"Software Developer",
+            "discription":"Styx media is Startup marketing-based company founded in 2018.",
+            "details":["Design software architecture and database from scratch to meet client requirements."],
+            "techUsed":["NodeJS"]
+        },
+        {
+            "date":"Nov 2019-Apr 2021",
+            "company":"Styx Media",
+            "position":"Software Developer",
+            "discription":"Styx media is Startup marketing-based company founded in 2018.",
+            "details":["Design software architecture and database from scratch to meet client requirements."],
+            "techUsed":["NodeJS"]
         }
     ],
     "project":[
+            {
+                "name":"StyxMedia",
+                "redirectUrl":"",
+                "discription":"asdasd",
+                "image":"/portfolio/images/novacutisclinics.png",
+                "techUsed":["NodeJS"]
+            }
 
     ]
 

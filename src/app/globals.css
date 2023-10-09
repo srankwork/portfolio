@@ -23,6 +23,10 @@ body {
   overflow: hidden;
 }
 
+::selection {
+  background-color: #D9D9D940;
+}
+
 .header,
 .detail-card {
   background: rgba(51, 0, 83, 0.75);
@@ -32,6 +36,14 @@ body {
 /* Add white border left side of card */
 .detail-card{
 
+}
+
+/* active and inactive navigator */
+.active{
+  color: #ECD8FF;
+}
+.in-active{
+  color: #5C4390;
 }
 
 .intro {
