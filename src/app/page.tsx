@@ -44,9 +44,9 @@ const ExperienceSection = () => {
             <p className='text-[14px] font-medium leading-[163%]'>
               {e.discription}
             </p>
-            <ul className='pl-[12px] list-disc'>
+            <ul className='pl-[12px] mt-[6px] list-disc'>
               {e.details.map((d) => (
-                <li key={d} className='list-disc'>
+                <li key={d} className='list-disc text-[14px] font-medium leading-[163%]'>
                   {d}
                 </li>
               ))}
