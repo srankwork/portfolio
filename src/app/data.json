@@ -38,14 +38,14 @@
                 "name":"CoutLoot Videos",
                 "redirectUrl":"https://videos.coutloot.com/",
                 "discription":"asdasd",
-                "image":"/portfolio/images/novacutisclinics.png",
+                "image":"/portfolio/images/coutloot.png",
                 "techUsed":["Gatsby","Tailwind CSS"]
             },
             {
                 "name":"Novacutis Clinics",
                 "redirectUrl":"https://www.novacutisclinics.com/services/dermal/",
                 "discription":"asdasd",
-                "image":"/portfolio/images/coutloot.png",
+                "image":"/portfolio/images/novacutisclinics.png",
                 "techUsed":["NodeJS","MongoDB"]
             },
             {
