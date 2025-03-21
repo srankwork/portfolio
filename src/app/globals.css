@@ -9,10 +9,10 @@
   :root {
   }
 } */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   padding: 0;
   margin: 0;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 ::selection {
-  background-color: #D9D9D940;
+  background-color: #d9d9d940;
 }
 
 .header,
@@ -33,17 +33,12 @@ body {
   backdrop-filter: blur(12.5px);
 }
 
-/* Add white border left side of card */
-.detail-card{
-
-}
-
 /* active and inactive navigator */
-.active{
-  color: #ECD8FF;
+.active {
+  color: #ecd8ff;
 }
-.in-active{
-  color: #5C4390;
+.in-active {
+  color: #5c4390;
 }
 
 .intro {
@@ -63,9 +58,16 @@ body {
 .intro p {
   padding-top: 6px;
   color: #c7b7f8;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+@media (min-width: 801px) {
+  body {
+    /* width: 80vw;
+    justify-content: center; */
+  }
 }
