@@ -2,11 +2,11 @@
     "expereince":[
         {
             "date":"Jun 2023 - Present",
-            "company":"CoutLoot",
+            "company":"CTR Tech Pvt Ltd.",
             "position":"Full Stack Developer",
-            "discription":"Coutloot is a platform where buyers and sellers can easily connect and sell products through various features such as recommendations, bargaining, and chat features, along with amazing listings. I work here as a Senior Full Stack Developer and have had the opportunity to work with many new technologies and features that benefit the business and open new streams for revenue.",
+            "discription":"Developed CONNECT, a platform that streamlines connections between B2B stakeholders and artists or their representatives, eliminating the hassle of multiple sources. Independently managed the entire Flutter project and Node.js backend development, taking full ownership of the product lifecycle—from architecture and development to deployment and maintenance. Built and maintained the system to ensure smooth performance and a seamless user experience. The app was successfully adopted by top artists in the country, making it a trusted platform in the industry",
             "details":[],
-            "techUsed":["NodeJS","MongoDB","Python","System Architecture Design","Aws","Docker","NextJS"]
+            "techUsed":["NodeJS","MongoDB","Flutter","System Architecture Design","Aws","Docker","Angular"]
         },
         {
             "date":"Sep 2022 - Apr 2023",
@@ -36,10 +36,17 @@
     "project":[
             {
                 "name":"Connect The Relevent",
-                "redirectUrl":"",
-                "discription":"ConnectTheRelevant is an app specifically requested by the client for chat features, including single and group-based chats, functionalities such as status viewing, message read receipts, chat deletion, image sharing, chat typing indicators, user blocking, and message drafting",
+                "redirectUrl":"https://connecttherelevant.com/app.html",
+                "discription":"a platform that streamlines connections between B2B stakeholders and artists or their representatives, eliminating the hassle of multiple sources.",
                 "image":"/portfolio/images/connecttherelevent.png",
-                "techUsed":["Flutter","NodeJS","Websocket","Redux","MongoDB"]
+                "techUsed":["Flutter","NodeJS","Websocket","Redux","MongoDB","Firebase"]
+            },
+            {
+                "name":"Wonder of wellness",
+                "redirectUrl":"https://wondersofwellness.in/",
+                "discription":"Freelance project to create website.",
+                "image":"/portfolio/images/wow.png",
+                "techUsed":["ReactJs","Tailwind CSS"]
             },
             {
                 "name":"TradeBook App",
@@ -47,13 +54,6 @@
                 "discription":"TradeBook is a Fintech application that is live on the Play Store and the App Store. It utilizes a microservices architecture with technologies including Flutter, Node.js, Python, Docker, AWS. It took me 2.5 months to complete this application system, resulting in an amazing user experience with amazing features too.",
                 "image":"/portfolio/images/tradebook_app.png",
                 "techUsed":["Flutter","NodeJS","Websocket","Redux","Python","Aws","MySql","Docker","Firebase"]
-            },
-            {
-                "name":"CoutLoot Videos",
-                "redirectUrl":"https://videos.coutloot.com/",
-                "discription":"Coutloot Video is an idea for sellers, allowing users to create marketing videos by selecting templates from a list that best suits their products.",
-                "image":"/portfolio/images/coutloot.png",
-                "techUsed":["NodeJS","MongoDB"]
             },
             {
                 "name":"Novacutis Clinics",
@@ -64,12 +64,11 @@
             },
             {
                 "name":"TradeBook Website",
-                "redirectUrl":"https://tradebook.in.net/",
+                "redirectUrl":"https://trackk.in/",
                 "discription":"TradeBook website is landing page for marketing purpose added features like payment gatway for plan purchase, support/contact features, download application redirect based on device type, real time notification for supports.",
                 "image":"/portfolio/images/tradebook_website.png",
-                "techUsed":["NodeJS","React","MySql","Docker"]
+                "techUsed":["NodeJS","React","MySql","Docker","Payment integration"]
             }
-
     ]
 
 }
